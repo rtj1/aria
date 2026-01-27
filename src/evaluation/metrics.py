@@ -132,7 +132,7 @@ class MetricsTracker:
         if filename is None:
             filename = f"results_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
 
-        filepath = self.results_dir / filename
+        filepath = self.results_dir / Path(filename).name
         data = {
             "summary": self.get_summary(),
             "attacks": [a.to_dict() for a in self.attacks],
