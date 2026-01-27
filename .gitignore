@@ -41,6 +41,10 @@ experiments/results/*.csv
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 
+# Draft files
+ALIGNMENT_FORUM_POST.md
+APPLICATION_SECTIONS.md
+
 # OS
 .DS_Store
 Thumbs.db
