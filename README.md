@@ -4,11 +4,11 @@ A research tool for automated LLM red-teaming, designed to discover and analyze 
 
 ## Key Findings
 
-Testing 77 attack variants across Claude's model family revealed:
+Full campaign: 1,078 attacks (77 variants × 14 behaviors) against Claude 3.5 Sonnet with 12.06% overall ASR:
 
-1. **Safety-Capability Gap**: Haiku (smallest) is 2x more vulnerable than Opus 4.5 (largest)
-2. **Professional Framing Works**: A novel "expert consultation" attack achieved 67% ASR—higher than traditional jailbreaks
-3. **Harm Calibration**: Models show stronger refusals for higher-harm requests (0% ASR for CBRN)
+1. **Roleplay & Novel strategies dominate**: 23.21% and 21.43% ASR — 4-6x more effective than DAN-style persona injection (6.12%)
+2. **Harm Calibration works**: Cybersecurity education topics ~30% ASR, violence/financial crime ~0% ASR
+3. **Preliminary safety-capability gap** *(small-sample)*: Smaller models may be ~2x more vulnerable — needs full-scale validation
 
 ---
 
@@ -90,7 +90,7 @@ python main.py dashboard
 
 ## Results Summary
 
-### Full Campaign (1,078 attacks across 14 behaviors)
+### Full Campaign (1,078 attacks across 14 behaviors, Claude 3.5 Sonnet)
 
 | Metric | Value |
 |--------|-------|
@@ -164,9 +164,9 @@ aria/
 
 ## Research Context
 
-This tool was built as part of preparation for the **Anthropic Security Fellow** program.
+This tool was built for AI safety research. See the [Alignment Forum post](ALIGNMENT_FORUM_POST.md) for full findings and methodology.
 
-### Relevant Anthropic Research
+### Related Research
 
 - [Constitutional Classifiers](https://www.anthropic.com/research/constitutional-classifiers) - Jailbreak defense
 - [Many-shot Jailbreaking](https://www.anthropic.com/research/many-shot-jailbreaking) - Attack patterns
