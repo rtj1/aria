@@ -164,7 +164,7 @@ aria/
 
 ## Research Context
 
-This tool was built for AI safety research. See the [Alignment Forum post](ALIGNMENT_FORUM_POST.md) for full findings and methodology.
+This tool was built for AI safety research. See the [blog post](https://rtj1.github.io/aria/) for full findings and methodology.
 
 ### Related Research
 
