@@ -19,7 +19,7 @@ class TestStrategyRegistry:
     def test_get_all_strategies(self):
         """Should return all strategy instances."""
         strategies = get_all_strategies()
-        assert len(strategies) == 5
+        assert len(strategies) == 10  # 10 strategy families
         assert all(hasattr(s, "generate") for s in strategies)
 
     def test_get_strategy_by_name(self):
